@@ -45,5 +45,10 @@
     "library"
   ],
   "license": "MIT",
-  "repository": "github:creativecommons/fonts"
+  "repository": "github:creativecommons/fonts",
+  "dependencies": {
+    "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
+    "@storybook/addon-docs": "^5.3.14"
+  }
 }

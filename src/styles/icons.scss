@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/iconss.ttf") format("truetype"),
+  url("../fonts/iconss.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+i.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon', monospace !important;
+
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+i.icon.caret-left:before {
+  content: "\e90f";
+}
+i.icon.caret-right:before {
+  content: "\e910";
+}
+i.icon.caret-up:before {
+  content: "\e911";
+}
+i.icon.caret-down:before {
+  content: "\e900";
+}
+i.icon.cancel-circle:before {
+  content: "\ea0d";
+}
+i.icon.checkmark:before {
+  content: "\ea10";
+}
+i.icon.radio-unchecked:before {
+  content: "\ea56";
+}
+i.icon.cross:before {
+  content: "\ea0f";
+}
+i.icon.facebook2:before {
+  content: "\ea91";
+}
+
+
