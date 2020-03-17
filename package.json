@@ -1,6 +1,6 @@
 {
   "name": "@creativecommons/fonts",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "Typefaces that lend personality to the web facing Creative Commons",
   "author": "Creative Commons (https://creativecommons.org)",
   "scripts": {
@@ -45,5 +45,8 @@
     "library"
   ],
   "license": "MIT",
-  "repository": "github:creativecommons/fonts"
+  "repository": "github:creativecommons/fonts",
+  "files": [
+    "dist"
+  ]
 }
