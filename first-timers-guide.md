@@ -20,8 +20,15 @@ $ npm install @storybook/addon-docs
 ```
 **Step 3:**
 Add addons-docs to .storybook/main.js along with other addons.
-
-![img](file:///home/megha/Downloads/Screenshot%202020-03-15%20at%201.51.07%20PM.png)
+```
+module.exports = {
+  stories: [
+    './welcome.stories.js',
+    '../src/**/*.stories.[tj]s'
+  ],
+  addons: ['@storybook/addon-docs'],
+}
+```
 
 Upon restarting docs tab appears on top.
 
