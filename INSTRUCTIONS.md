@@ -18,30 +18,6 @@ Change into the project directory.
 ```
 $ cd fonts/
 ```
-### Manual setup
-
-_Requires Node.js and npm to be installed._
-
-**Step 3:**
-Install npm dependencies.
-
-```
-$ npm install
-```
-
-**Step 4:**
-Watch Sass files for changes, and recompile stylesheets whenever a file is updated, by running the `watch` task. 
-
-```
-$ npm run watch
-```
-
-**Step 5:**
-Start the fonts storybook by running the `storybook` task in a separate terminal window.
-
-```
-$ npm run storybook
-```
 
 After this step, there are two ways to proceed. Choose the one that suits your
 needs best.
@@ -53,7 +29,6 @@ labels. We can discuss the possibility of that change or new feature being
 implemented and released in the future. This lets us come to an agreement about
 the proposed idea before any work is done.
 
-
 ## Submitting changes
 
 **Step 0:** 
@@ -63,27 +38,9 @@ the changes are in alignment with the short and long term goals of the project.
 **Step 1:** 
 Create a branch named after the changes. Use underscores. Be descriptive.
 
-```
-$ git checkout -b branch_name
-```
-
 **Step 2:**
 Resolve the issue by changing the code. Update tests if need be.
 
 **Step 3:**
-Run the `lint` task to ensure code quality.
-
-```
-$ npm run lint
-```
-
-**Step 4:**
 Push the commits to your branch on the fork and submit a PR. Fill all relevant 
 fields in the PR template.
-
-```
-$ git add file_name
-$ git commit
-$ git push --set-upstream fork branch_name
-```
-
