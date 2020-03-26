@@ -1,0 +1,68 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+import { alphabetTable, numberTable, sampleTexts } from './helpers'
+
+<Meta title="Source Sans Pro" decorators = {[
+    storyFn => `<style>
+  .source-sans-pro {
+    font-family: 'Source Sans Pro';
+  }
+  .semi-bold {
+    font-weight: 600;
+  }
+  .bold {
+    font-weight: 700;
+  }
+</style>
+<div class="source-sans-pro has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro semi-bold has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro bold has-text-black">
+  ${storyFn()}
+</div>`
+  ]}/>
+
+## Source Sans Pro
+<Preview>
+  <Story name='uppercaseLetters' parameters={{
+    design: alphabetTable()
+  }}>{
+    `<div>
+    See Docs panel
+    <div/>`
+  }
+  </Story>
+</Preview>
+<Preview>
+  <Story name='lowercaseLetters' parameters={{
+    design: alphabetTable(['lowercase'])
+  }}>{
+    `<div>
+    See Docs panel
+    <div/>`
+  }
+  </Story>
+</Preview>
+<Preview>
+  <Story name='numbers' parameters={{
+    design: numberTable
+  }}>{
+    `<div>
+    See Docs panel
+    <div/>`
+  }
+  </Story>
+</Preview>
+<Preview>
+  <Story name='pangrams' parameters={{
+    design: sampleTexts
+  }}>{
+    `<div>
+    See design panel
+    <div/>`
+  }
+  </Story>
+</Preview>
+ 
