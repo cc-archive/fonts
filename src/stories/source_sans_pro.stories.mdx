@@ -22,11 +22,32 @@ import { alphabetTable, numberTable, sampleTexts } from './helpers'
 <div class="source-sans-pro bold has-text-black">
   ${storyFn()}
 </div>`
-  ]}/>
+  ]} parameters={{ alphabetTable, numberTable, sampleTexts }}/>
 
 ## Source Sans Pro
 <Preview>
-  <Story name='uppercaseLetters' parameters={{
+  <Story name='uppercaseLetters' decorators = {[
+    storyFn => `<style>
+  .source-sans-pro {
+    font-family: 'Source Sans Pro';
+  }
+  .semi-bold {
+    font-weight: 600;
+  }
+  .bold {
+    font-weight: 700;
+  }
+</style>
+<div class="source-sans-pro has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro semi-bold has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro bold has-text-black">
+  ${storyFn()}
+</div>`
+  ]} parameters={{
     design: alphabetTable()
   }}>{
     `<div>
@@ -36,7 +57,28 @@ import { alphabetTable, numberTable, sampleTexts } from './helpers'
   </Story>
 </Preview>
 <Preview>
-  <Story name='lowercaseLetters' parameters={{
+  <Story name='lowercaseLetters' decorators = {[
+    storyFn => `<style>
+  .source-sans-pro {
+    font-family: 'Source Sans Pro';
+  }
+  .semi-bold {
+    font-weight: 600;
+  }
+  .bold {
+    font-weight: 700;
+  }
+</style>
+<div class="source-sans-pro has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro semi-bold has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro bold has-text-black">
+  ${storyFn()}
+</div>`
+  ]} parameters={{
     design: alphabetTable(['lowercase'])
   }}>{
     `<div>
@@ -46,7 +88,28 @@ import { alphabetTable, numberTable, sampleTexts } from './helpers'
   </Story>
 </Preview>
 <Preview>
-  <Story name='numbers' parameters={{
+  <Story name='numbers' decorators = {[
+    storyFn => `<style>
+  .source-sans-pro {
+    font-family: 'Source Sans Pro';
+  }
+  .semi-bold {
+    font-weight: 600;
+  }
+  .bold {
+    font-weight: 700;
+  }
+</style>
+<div class="source-sans-pro has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro semi-bold has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro bold has-text-black">
+  ${storyFn()}
+</div>`
+  ]} parameters={{
     design: numberTable
   }}>{
     `<div>
@@ -56,7 +119,28 @@ import { alphabetTable, numberTable, sampleTexts } from './helpers'
   </Story>
 </Preview>
 <Preview>
-  <Story name='pangrams' parameters={{
+  <Story name='pangrams' decorators = {[
+    storyFn => `<style>
+  .source-sans-pro {
+    font-family: 'Source Sans Pro';
+  }
+  .semi-bold {
+    font-weight: 600;
+  }
+  .bold {
+    font-weight: 700;
+  }
+</style>
+<div class="source-sans-pro has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro semi-bold has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro bold has-text-black">
+  ${storyFn()}
+</div>`
+  ]} parameters={{
     design: sampleTexts
   }}>{
     `<div>
