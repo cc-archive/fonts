@@ -1,0 +1,46 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+import { alphabetTable, numberTable, sampleTexts } from './helpers'
+import { storyFn } from './story'
+
+<Meta title="Source Sans Pro" decorators = {[storyFn]} parameters = {{ alphabetTable, numberTable, sampleTexts }}/>
+
+<Preview>
+  <Story name='uppercaseLetters' decorators = {[storyFn]} parameters={{
+    design: alphabetTable()
+  }}>{
+    `<div>
+    See Docs panel
+    </div>`
+  }</Story>
+</Preview>
+
+<Preview>
+  <Story name='lowercaseLetters' decorators = {[storyFn]} parameters={{
+    design: alphabetTable(['lowercase'])
+  }}>{
+    `<div>
+    See Docs panel
+    </div>`
+  }</Story>
+</Preview>
+
+<Preview>
+  <Story name='numbers' decorators = {[storyFn]} parameters={{
+    design: numberTable
+  }}>{
+    `<div>
+    See Docs panel
+    </div>`
+  }</Story>
+</Preview>
+
+<Preview>
+  <Story name='pangrams' decorators = {[storyFn]} parameters={{
+    design: sampleTexts
+  }}>{
+    `<div>
+    See design panel
+    </div>`
+  }</Story>
+</Preview>
+ 
