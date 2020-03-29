@@ -1,46 +1,51 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
 import { alphabetTable, numberTable, sampleTexts } from './helpers'
-import { storyFn } from './story'
+import { storyFont } from './story'
 
-<Meta title="Source Sans Pro" decorators = {[storyFn]} parameters = {{ alphabetTable, numberTable, sampleTexts }}/>
+<Meta title="Source Sans Pro"  decorators= {[
+    storyFn => `<style>
+  .source-sans-pro {
+    font-family: 'Source Sans Pro';
+  }
+  .semi-bold {
+    font-weight: 600;
+  }
+  .bold {
+    font-weight: 700;
+  }
+</style>
+<div class="source-sans-pro has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro semi-bold has-text-black has-bottom-margin">
+  ${storyFn()}
+</div>
+<div class="source-sans-pro bold has-text-black">
+  ${storyFn()}
+</div>`
+  ]}/>
 
-<Preview>
-  <Story name='uppercaseLetters' decorators = {[storyFn]} parameters={{
-    design: alphabetTable()
-  }}>{
-    `<div>
-   ${storyFn()}
-    <div/>`
+<Preview mdxSource = {alphabetTable()}>
+  <Story name='uppercaseLetters'>{
+    alphabetTable()
   }</Story>
 </Preview>
 
-<Preview>
-  <Story name='lowercaseLetters' decorators = {[storyFn]} parameters={{
-    design: alphabetTable(['lowercase'])
-  }}>{
-     `<div>
-   ${storyFn()}
-    <div/>`
+<Preview mdxSource = {alphabetTable(['lowercase'])}>
+  <Story name='lowercaseLetters'>{
+     alphabetTable(['lowercase'])
   }</Story>
 </Preview>
 
-<Preview>
-  <Story name='numbers' decorators = {[storyFn]} parameters={{
-    design: numberTable
-  }}>{
-     `<div>
-   ${storyFn()}
-    <div/>`
+<Preview mdxSource = {numberTable()}>
+  <Story name='numbers'>{
+    numberTable()
   }</Story>
 </Preview>
 
-<Preview>
-  <Story name='pangrams' decorators = {[storyFn]} parameters={{
-    design: sampleTexts
-  }}>{
-    `<div>
-   ${storyFn()}
-    <div/>`
+<Preview mdxSource = {sampleTexts()}>
+  <Story name='pangrams'>{
+    sampleTexts()
   }</Story>
 </Preview>
  

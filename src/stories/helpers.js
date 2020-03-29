@@ -10,7 +10,7 @@ export const alphabetTable = (classes = []) => `<table class="character-table ${
   </tr>
 </table>`
 
-export const numberTable = `<table class="character-table">
+export const numberTable = () => `<table class="character-table">
   <tr>
     ${[0, 1, 2, 3, 4].map((num) => `<td>${num}</td>`).join('')}
   </tr>
@@ -19,7 +19,7 @@ export const numberTable = `<table class="character-table">
   </tr>
 </table>`
 
-export const sampleTexts = `
+export const sampleTexts = ()=> `
 <p>The quick brown fox jumps over the lazy dog.</p>
 <p>We promptly judged antique ivory buckles for the next prize.</p>
 <p>Crazy Fredrick bought many very exquisite opal jewels.</p>
