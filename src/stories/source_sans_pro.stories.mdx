@@ -9,8 +9,8 @@ import { storyFn } from './story'
     design: alphabetTable()
   }}>{
     `<div>
-    See Docs panel
-    </div>`
+   ${storyFn()}
+    <div/>`
   }</Story>
 </Preview>
 
@@ -18,9 +18,9 @@ import { storyFn } from './story'
   <Story name='lowercaseLetters' decorators = {[storyFn]} parameters={{
     design: alphabetTable(['lowercase'])
   }}>{
-    `<div>
-    See Docs panel
-    </div>`
+     `<div>
+   ${storyFn()}
+    <div/>`
   }</Story>
 </Preview>
 
@@ -28,9 +28,9 @@ import { storyFn } from './story'
   <Story name='numbers' decorators = {[storyFn]} parameters={{
     design: numberTable
   }}>{
-    `<div>
-    See Docs panel
-    </div>`
+     `<div>
+   ${storyFn()}
+    <div/>`
   }</Story>
 </Preview>
 
@@ -39,8 +39,8 @@ import { storyFn } from './story'
     design: sampleTexts
   }}>{
     `<div>
-    See design panel
-    </div>`
+   ${storyFn()}
+    <div/>`
   }</Story>
 </Preview>
  
