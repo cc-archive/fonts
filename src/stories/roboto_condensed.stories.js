@@ -18,6 +18,4 @@ export const uppercaseLetters = () => alphabetTable()
 
 export const lowercaseLetters = () => alphabetTable(['lowercase'])
 
-export const numbers = () => numberTable
-
-export const pangrams = () => sampleTexts
+export const numbers = () => numberTable()

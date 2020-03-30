@@ -1,8 +1,8 @@
-import { Meta, Story, Preview } from '@storybook/addon-docs/blocks'
+import { Meta, Story, Preview, Typeset } from '@storybook/addon-docs/blocks'
 import { alphabetTable, numberTable, sampleTexts } from './helpers'
-import { storyFont } from './story'
 
-<Meta title="Source Sans Pro"  decorators= {[
+<Meta title="Source Sans Pro" parameters={{
+  decorators: [
     storyFn => `<style>
   .source-sans-pro {
     font-family: 'Source Sans Pro';
@@ -23,29 +23,135 @@ import { storyFont } from './story'
 <div class="source-sans-pro bold has-text-black">
   ${storyFn()}
 </div>`
-  ]}/>
+  ]
+}}/>
 
-<Preview mdxSource = {alphabetTable()}>
-  <Story name='uppercaseLetters'>{
-    alphabetTable()
-  }</Story>
-</Preview>
+# Source Sans Pro
 
-<Preview mdxSource = {alphabetTable(['lowercase'])}>
-  <Story name='lowercaseLetters'>{
-     alphabetTable(['lowercase'])
-  }</Story>
-</Preview>
+Source® Sans Pro, Adobe's first open source typeface family, was designed by Paul D. Hunt.
+It is a sans serif typeface intended to work well in user interfaces.
 
-<Preview mdxSource = {numberTable()}>
-  <Story name='numbers'>{
-    numberTable()
-  }</Story>
-</Preview>
+It is used in Vocabulary in 3 font weights: regular (400), semibold (600) and bold (700).
 
-<Preview mdxSource = {sampleTexts()}>
-  <Story name='pangrams'>{
-    sampleTexts()
-  }</Story>
-</Preview>
- 
+## Regular
+
+<Typeset
+  fontSizes={[
+    '2rem',
+    '1rem'
+  ]}
+  fontFamily="Source Sans Pro"
+  fontWeight={400}
+  sampleText={sampleTexts[0]} />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={400}
+  sampleText="A B C D E F G H I J K L M N O P Q R S T U V W X Y Z" />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={400}
+  sampleText="a b c d e f g h i j k l m n o p q r s t u v w x y z" />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={400}
+  sampleText="0 1 2 3 4 5 6 7 8 9 + - * / % $" />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={400}
+  sampleText=". ? ! ' & : ; @ # < > ( ) { } [ ]" />
+
+## Semibold
+
+<Typeset
+  fontSizes={[
+    '2rem',
+    '1rem'
+  ]}
+  fontFamily="Source Sans Pro"
+  fontWeight={600}
+  sampleText={sampleTexts[1]} />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={600}
+  sampleText="A B C D E F G H I J K L M N O P Q R S T U V W X Y Z" />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={600}
+  sampleText="a b c d e f g h i j k l m n o p q r s t u v w x y z" />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={600}
+  sampleText="0 1 2 3 4 5 6 7 8 9 + - * / % $" />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={600}
+  sampleText=". ? ! ' & : ; @ # < > ( ) { } [ ]" />
+
+## Bold
+
+<Typeset
+  fontSizes={[
+    '2rem',
+    '1rem'
+  ]}
+  fontFamily="Source Sans Pro"
+  fontWeight={700}
+  sampleText={sampleTexts[2]} />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={700}
+  sampleText="A B C D E F G H I J K L M N O P Q R S T U V W X Y Z" />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={700}
+  sampleText="a b c d e f g h i j k l m n o p q r s t u v w x y z" />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={700}
+  sampleText="0 1 2 3 4 5 6 7 8 9 + - * / % $" />
+
+<Typeset
+  fontSizes={['2rem']}
+  fontFamily="Source Sans Pro"
+  fontWeight={700}
+  sampleText=". ? ! ' & : ; @ # < > ( ) { } [ ]" />
+
+<Story name="Uppercase letters" parameters={{
+  docs: { disable: true }
+}}>{
+  alphabetTable()
+}</Story>
+
+<Story name="Lowercase letters" parameters={{
+  docs: { disable: true }
+}}>{
+  alphabetTable(['lowercase'])
+}</Story>
+
+<Story name="Numbers" parameters={{
+  docs: { disable: true }
+}}>{
+  numberTable()
+}</Story>
