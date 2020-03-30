@@ -19,10 +19,10 @@ export const numberTable = () => `<table class="character-table">
   </tr>
 </table>`
 
-export const sampleTexts = ()=> `
-<p>The quick brown fox jumps over the lazy dog.</p>
-<p>We promptly judged antique ivory buckles for the next prize.</p>
-<p>Crazy Fredrick bought many very exquisite opal jewels.</p>
-<p>Sixty zippers were quickly picked from the woven jute bag.</p>
-<p>Playing jazz vibe chords quickly excites my wife.</p>
-`
+export const sampleTexts = [
+  'The quick brown fox jumps over the lazy dog.',
+  'Playing jazz vibe chords quickly excites my wife.',
+  'Crazy Fredrick bought many very exquisite opal jewels.',
+  'We promptly judged antique ivory buckles for the next prize.',
+  'Sixty zippers were quickly picked from the woven jute bag.'
+]
