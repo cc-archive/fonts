@@ -5,6 +5,8 @@
   "author": "Creative Commons (https://creativecommons.org)",
   "scripts": {
     "lint": "eslint src/*.js src/**/*.js",
+    "test:snapshot": "start-server-and-test storybook http-get://localhost:8080 jest:snapshot",
+    "jest:snapshot": "jest -c tests/snapshot/jest.config.js",
     "build": "webpack --mode production",
     "watch": "webpack --mode production --watch --progress",
     "storybook": "start-storybook -s ./src/assets -p 8080",
@@ -48,5 +50,12 @@
     "library"
   ],
   "license": "MIT",
-  "repository": "github:creativecommons/fonts"
+  "repository": "github:creativecommons/fonts",
+  "dependencies": {
+    "jest": "^25.2.4",
+    "jest-image-snapshot": "^3.0.1",
+    "jest-puppeteer": "^4.4.0",
+    "puppeteer": "^2.1.1",
+    "start-server-and-test": "^1.10.11"
+  }
 }
