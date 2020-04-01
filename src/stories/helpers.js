@@ -1,3 +1,10 @@
+await page.setViewport({ width: 1920, height: 1080, deviceScaleFactor: 2 })
+
+
+export const goTo = async (page, id) => {
+  await page.goto(`http://localhost:8080/iframe.html?id=${id}`)
+}
+
 export const alphabetTable = (classes = []) => `<table class="character-table ${classes.join(' ')}">
   <tr>
     ${['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'].map((char) => `<td>${char}</td>`).join('')}
