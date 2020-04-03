@@ -1,0 +1,16 @@
+@import 'true';
+@import '../../src/styles/vocabulary_icons.scss';
+@include describe('icons()'){
+@include it('Outputs color according to branding') {
+    @include assert {
+      @include output {
+        @include branded-icon("instagram", "instagram");
+      }
+      @include expect {
+        i.icon.#{instagram}.colored:before {
+        color: "instagram";
+  }
+      }
+    }
+  }
+}
