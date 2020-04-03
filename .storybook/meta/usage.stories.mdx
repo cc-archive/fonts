@@ -19,28 +19,17 @@ Just install `@creativecommons/fonts` using the package manager of your choice.
 $ npm install @creativecommons/fonts
 ```
 
-### Stylesheets
-
-In your entrypoint, you can include the master CSS file.
+In your entrypoint, you can include the master CSS file. It does not include the Accidenz Commons font, so you might
+want to import that separately.
 
 ```js
 import '@creativecommons/fonts/css/fonts.css'
-```
-
-Alternatively, you can import the SCSS styleheets into your own stylesheets.
-
-```scss
-@import '~@creativecommons/fonts/scss/vocabulary_icons'
-@import '~@creativecommons/fonts/scss/font_face.scss'
-@import '~@creativecommons/fonts/scss/roboto_condensed.scss'
 ```
 
 ## CDN
 
 To start using Fonts for quick prototyping or development you can use one of our CDN-based deployments. Both CDNs
 mirror our `npm` deploys so choose either one based on your personal preference.
-
-### Stylesheets
 
 Just link to the master CSS file with any of these one-line `link` tags within your document `head` tag.
 
@@ -62,3 +51,12 @@ Just link to the master CSS file with any of these one-line `link` tags within y
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@creativecommons/fonts/css/fonts.css">
 ```
 
+## Individual imports
+
+If you want to import individual fonts instead of importing them all at once, replace `fonts.css` in either of the above
+methods with any of the following:
+
+- `vocabulary_icons.css`
+- `source_sans_pro.css`
+- `roboto_condensed.css`
+- `accidenz_commons.css`

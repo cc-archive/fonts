@@ -22,30 +22,19 @@ project in a number of ways.
 Interested?
 
 The following instructions are in addition to the processes in our general [Contribution][contribution] and
-[Pull Request][pull_request] guidelines on the Creative Common Open Source website. If you haven't read them already,
-read them first.
+[Pull Request][pull_request] guidelines on the Creative Common Open Source website, and [those] in Vocabulary. If you
+haven't read them already, read them first.
 
 [contribution]:https://creativecommons.github.io/contributing-code/
 [pull_request]:https://opensource.creativecommons.org/contributing-code/pr-guidelines/
+[those]:https://cc-vocabulary.netlify.com/?path=/docs/vocabulary-contribution--page
 
-These instructions are a port of the general guidelines, tailored specifically for Vocabulary.
+These instructions are a port of the general guidelines, tailored specifically for Fonts.
 
 ## Setting up
 
-Clone the repository.
-
-```bash
-$ git clone https://github.com/creativecommons/fonts.git
-$ cd fonts/
-```
-
-If you intend to contribute, which you should, fork the repo from GitHub's GUI and clone your fork instead.
-
-```bash
-$ git clone https://github.com/<your_username>/fonts.git
-$ cd fonts/
-$ git remote add upstream https://github.com/creativecommons/fonts.git
-```
+Clone the repository. If you intend to contribute, which you should, fork the repo from GitHub's GUI and clone your fork
+instead. See GitHub Help pages for [instructions on how to do that](https://help.github.com/en/github/getting-started-with-github/fork-a-repo).
 
 To setup you can either use Docker and Docker Compose or manually set up the project. Both have their advantages and
 disadvantages.
@@ -53,8 +42,8 @@ disadvantages.
 Docker makes sure every developer has a consistent and identical development setup. It also removes the entire hassle
 involved in dependency management. On the other hand, it is heavy and hits system resources particularly hard.
 
-Manual setups are lightweight, tweable and much more performant as the code runs very close to the operating
-system. On the otuer hand, all dependencies must be manually resolved and each developer has a different setup.
+Manual setups are lightweight, tweakable and much more performant as the code runs very close to the operating
+system. On the other hand, all dependencies must be manually resolved and each developer has a different setup.
 
 ### Docker and Docker Compose
 
@@ -64,6 +53,21 @@ Bring up all services.
 
 ```bash
 $ docker-compose up -d
+```
+
+To run `npm` commands, you'll need to enter a Fonts container.
+
+```bash
+$ ./docker/fonts/run.sh
+docker-desktop:/codebase$ ...
+```
+
+If you install new packages, you'll need to rebuild a few things.
+
+```bash
+$ docker-compose down
+$ docker volume prune
+$ docker-compose build storybook
 ```
 
 ### Manual setup
@@ -84,74 +88,8 @@ $ npm run watch
 $ npm run storybook
 ```
 
-## Discussing changes
+## Discussing changes, assigning work, making changes and testing
 
-For bugs reports and feature requests, use GitHub issues with the appropriate
-labels. We can discuss the possibility of that change or new feature being
-implemented and released in the future. This lets us come to an agreement about
-the proposed idea before any work is done.
+See [Vocabulary guidelines].
 
-## Assigning work
-
-If the issue is already assigned to somebody, it is considered polite to give the last assignee a week's time to attempt
-it before you do. You can express an intention to work on it nonetheless so that it can be reassigned to you if the last
-assignee bails.
-
-Submitting PRs without commenting your intent to solve an issue is risky because if someone else does ask to work on it
-before your PR comes in, your PR will be put on hold for a week.
-
-## Making changes
-
-Do all work on a its own branch. Use meaningful branch names.
-
-**Examples**
-- `broken_links_readme`
-- `typo_misspelled`
-
-Use clean commit messages, as imperative sentences in the present tense.
-
-**Examples:**
-- Remove the broken links from the \`README.md\` file
-- Fix the typo on line 12, where 'misspelled' was misspelled as 'mispelled'
-
-Update your fork from time to time.
-
-```bash
-$ git checkout master
-$ git pull upstream master
-$ git push origin master
-```
-
-Write new tests, and update existing ones, for the changes you make.
-
-## Testing
-
-While our Husky setup will prevent you from committing poorly linted code, it cannot catch logical problems. For
-that we have some tests.
-
-### Unit
-
-Running unit tests is easy.
-
-```bash
-$ npm run test:unit
-```
-
-### Visual regression
-
-Visual regression tests are slightly more complex. With the Storybook process turned off, run the following command to
-run visual regression tests.
-
-```bash
-$ npm run test:snapshot
-```
-
-If you have the Storybook server running, you can run use the alternate command below.
-
-```bash
-$ npm run jest:snapshot
-```
-
-To update screenshots, after you've written some new tests or updated failing ones, run the same commands as earlier
-with `-- -u` appended to the end of the command. The `--` is a special construct that allows passing arguments to
-`npm` scripts, which we're using the pass the `-u` (or `--updateSnapshot`) flag to Jest.
+[Vocabulary guidelines]:https://cc-vocabulary.netlify.com/?path=/docs/vocabulary-contribution--page
