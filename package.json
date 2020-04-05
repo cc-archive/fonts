@@ -4,15 +4,9 @@
   "description": "Typefaces that lend personality to the web facing Creative Commons",
   "author": "Creative Commons (https://creativecommons.org)",
   "scripts": {
-<<<<<<< HEAD
-    "test:snapshot": "start-server-and-test storybook http-get://localhost:8080 jest:snapshot",
-    "jest:snapshot": "jest -c tests/snapshot/jest.config.js",
-    "lint": "eslint src/*.js src/**/*.js",
-=======
     "lint": "eslint src/*.js src/**/*.js tests/**/*.js",
     "test:unit": "jest -c tests/unit/jest.config.js",
     "test:snapshot": "jest -c tests/snapshot/jest.config.js",
->>>>>>> origin/master
     "build": "webpack --mode production",
     "watch": "webpack --mode production --watch --progress",
     "storybook": "start-storybook --ci -s ./src/assets -p 8080",
