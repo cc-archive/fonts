@@ -1,30 +1,27 @@
-@import 'true';
-@import '../../src/styles/vocabulary_icons.scss';
-@include describe('branded-icons()'){
-@include it('Outputs color according to branding') {
+@include describe("Vocabulary Icons") {
+  @include it("creates icons with given codepoint") {
     @include assert {
       @include output {
-        @include branded-icon("instagram", "instagram")
+        @include icon("classname", "\1f60e");
       }
+
       @include expect {
-        i.icon.#{instagram}.colored:before {
-        color: "instagram";
-  }
+        i.icon.classname:before {
+          content: "😎";
+        }
       }
     }
   }
-}
-
-@include describe('icon()'){
-@include it('Outputs content according to icon class') {
+  @include it("creates colored icons if branded") {
     @include assert {
       @include output {
-        @include icon("instagram", "instagram")
+        @include branded-icon("classname", orange);
       }
+
       @include expect {
-        i.icon.#{instagram}:before {
-          content: "#{instagram}";
-  }
+        i.icon.classname.colored:before {
+          color: orange;
+        }
       }
     }
   }
