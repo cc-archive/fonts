@@ -1,8 +1,8 @@
 {
   "metadata": {
     "name": "Vocabulary Icons",
-    "lastOpened": 1418773394855,
-    "created": 1583937749977
+    "lastOpened": 0,
+    "created": 1586916408419
   },
   "iconSets": [
     {
@@ -384,12 +384,34 @@
           "tempChar": "",
           "ligatures": "sliders",
           "code": 59914
+        },
+        {
+          "order": 80,
+          "id": 11,
+          "name": "flag",
+          "prevSize": 32,
+          "code": 59915,
+          "tempChar": "",
+          "ligatures": "flag"
+        },
+        {
+          "order": 81,
+          "id": 12,
+          "name": "question-circle",
+          "prevSize": 32,
+          "code": 59916,
+          "tempChar": "",
+          "ligatures": "questioncircle"
         }
       ],
       "id": 5,
       "metadata": {
         "name": "Symbols",
-        "license": "MIT"
+        "license": "MIT",
+        "importSize": {
+          "width": 512,
+          "height": 512
+        }
       },
       "height": 1024,
       "prevSize": 32,
@@ -571,9 +593,40 @@
             "sliders-h"
           ],
           "defaultCode": 59667
+        },
+        {
+          "id": 11,
+          "paths": [
+            "M699.13 197.566c-107.174 0-195.688-69.566-330.434-69.566-49.91 0-94.618 8.768-136.090 24.026 4.683-11.873 7.398-25.625 7.398-40.011 0-2.502-0.082-4.986-0.244-7.447l0.018 0.335c-3.544-56.872-50.166-102.49-107.102-104.806-63.986-2.604-116.676 48.496-116.676 111.904 0 38.052 18.994 71.65 48 91.89v772.11c0 26.51 21.49 48 48 48h32c26.51 0 48-21.49 48-48v-188.8c56.622-24.128 127.164-44.244 228.87-44.244 107.176 0 195.688 69.566 330.434 69.566 96.338 0 173.334-32.588 245.010-81.716 17.366-11.902 27.686-31.664 27.686-52.716v-486.2c0-46.786-48.538-77.74-90.97-58.032-68.676 31.896-152.908 63.708-233.9 63.708z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 0,
+          "tags": [
+            "flag"
+          ]
+        },
+        {
+          "id": 12,
+          "paths": [
+            "M512 16c-273.914 0-496 222.166-496 496 0 273.994 222.086 496 496 496s496-222.006 496-496c0-273.834-222.086-496-496-496zM512 912c-221.064 0-400-178.862-400-400 0-220.99 178.944-400 400-400 220.982 0 400 178.942 400 400 0 221.060-178.862 400-400 400zM726.488 401.6c0 134.104-144.842 136.168-144.842 185.726v12.674c0 13.254-10.746 24-24 24h-91.294c-13.254 0-24-10.746-24-24v-17.318c0-71.49 54.2-100.068 95.158-123.032 35.122-19.69 56.648-33.082 56.648-59.158 0-34.492-43.998-57.386-79.568-57.386-46.378 0-67.788 21.954-97.884 59.938-8.114 10.24-22.92 12.142-33.332 4.248l-55.648-42.196c-10.214-7.744-12.502-22.132-5.288-32.726 47.254-69.388 107.442-108.37 201.15-108.37 98.142 0 202.9 76.608 202.9 177.6zM596 736c0 46.318-37.682 84-84 84s-84-37.682-84-84 37.682-84 84-84 84 37.682 84 84z"
+          ],
+          "attrs": [
+            {}
+          ],
+          "isMulticolor": false,
+          "isMulticolor2": false,
+          "grid": 0,
+          "tags": [
+            "question-circle"
+          ]
         }
       ],
-      "colorThemes": []
+      "colorThemes": [],
+      "invisible": false
     },
     {
       "selection": [
@@ -582,7 +635,7 @@
           "id": 65,
           "name": "logo",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "cc, cclogo",
           "code": 60416
         },
@@ -591,7 +644,7 @@
           "id": 66,
           "name": "by",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccby",
           "code": 60417
         },
@@ -600,7 +653,7 @@
           "id": 67,
           "name": "nc",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccnc",
           "code": 60418
         },
@@ -609,7 +662,7 @@
           "id": 68,
           "name": "nc-eu",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccnceu",
           "code": 60419
         },
@@ -618,7 +671,7 @@
           "id": 69,
           "name": "nc-jp",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccncjp",
           "code": 60420
         },
@@ -627,7 +680,7 @@
           "id": 70,
           "name": "nd",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccnd",
           "code": 60421
         },
@@ -636,7 +689,7 @@
           "id": 71,
           "name": "sa",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccsa",
           "code": 60422
         },
@@ -645,7 +698,7 @@
           "id": 72,
           "name": "remix",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccremix",
           "code": 60423
         },
@@ -654,7 +707,7 @@
           "id": 73,
           "name": "sampling-plus",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccsamplingplus",
           "code": 60424
         },
@@ -663,7 +716,7 @@
           "id": 74,
           "name": "sampling",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccsampling",
           "code": 60425
         },
@@ -672,7 +725,7 @@
           "id": 75,
           "name": "share",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccshare",
           "code": 60426
         },
@@ -681,7 +734,7 @@
           "id": 76,
           "name": "zero",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "cczero",
           "code": 60427
         },
@@ -690,7 +743,7 @@
           "id": 77,
           "name": "pd",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "publicdomain, pd",
           "code": 60428
         },
@@ -699,7 +752,7 @@
           "id": 78,
           "name": "pd-alt",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "publicdomainalt, pdalt",
           "code": 60429
         },
@@ -709,7 +762,7 @@
           "name": "letterheart",
           "prevSize": 32,
           "code": 60430,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "ccletterheart"
         }
       ],
@@ -992,7 +1045,7 @@
           "id": 0,
           "name": "instagram",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "instagram",
           "code": 60672
         },
@@ -1001,7 +1054,7 @@
           "id": 1,
           "name": "twitter",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "twitter",
           "code": 60673
         },
@@ -1010,7 +1063,7 @@
           "id": 2,
           "name": "linkedin",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "linkedin",
           "code": 60674
         },
@@ -1019,7 +1072,7 @@
           "id": 3,
           "name": "facebook",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "facebook",
           "code": 60675
         },
@@ -1028,7 +1081,7 @@
           "id": 4,
           "name": "pinterest",
           "prevSize": 32,
-          "tempChar": "",
+          "tempChar": "",
           "ligatures": "pinterest",
           "code": 60676
         }
