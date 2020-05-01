@@ -1,0 +1,13 @@
+@include describe('Font Face'){
+    @include it('Assigns a font family,font-weight to Font Face') {
+        @include assert {
+          @include output {
+            @include font("Roboto Condensed",400);
+          }
+          @include expect {
+            font-family: "Roboto Condensed";
+            font-weight: 400;
+          }
+        }
+      }
+    }
