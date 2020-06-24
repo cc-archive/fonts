@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Vocabulary Icons";
   src: url("../fonts/VocabularyIcons.woff") format("woff"),
-  url("../fonts/VocabularyIcons.ttf") format("truetype");
+    url("../fonts/VocabularyIcons.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -44,7 +44,6 @@ $icons: (
   "angle-left": "\e907",
   "caret-right": "\e908",
   "caret-down": "\e909",
-
   "tick": "\ea00",
   "cross": "\ea01",
   "circle-filled": "\ea02",
@@ -60,7 +59,6 @@ $icons: (
   "question-circle": "\ea0c",
   "plus": "\ea0d",
   "minus": "\ea0e",
-
   "cc-nd": "\229c",
   "cc-zero": "\1f10d",
   "cc-sa": "\1f10e",
@@ -68,7 +66,6 @@ $icons: (
   "cc-logo": "\1f16d",
   "cc-pd": "\1f16e",
   "cc-by": "\1f16f",
-
   "cc-nc-eu": "\ec03",
   "cc-nc-jp": "\ec04",
   "cc-remix": "\ec07",
@@ -77,7 +74,6 @@ $icons: (
   "cc-share": "\ec0a",
   "cc-pd-alt": "\ec0d",
   "cc-letterheart": "\ec0e",
-
   "instagram": "\ed00",
   "twitter": "\ed01",
   "linkedin": "\ed02",
@@ -90,6 +86,7 @@ $icons: (
   "tumblr": "\ed09",
   "sms": "\ed10",
   "messenger": "\ed11",
+  "medium": "\ed12",
 );
 
 @mixin icon($icon-class, $icon-codepoint) {
@@ -114,6 +111,7 @@ $whatsapp-brand: #25d366;
 $tumblr-brand: #35465c;
 $sms-brand: #4aae20;
 $messenger-brand: #0084ff;
+$medium-brand: #00ab6c;
 $brand-colors: (
   "facebook": $facebook-brand,
   "twitter": $twitter-brand,
@@ -127,6 +125,7 @@ $brand-colors: (
   "tumblr": $tumblr-brand,
   "sms": $sms-brand,
   "messenger": $messenger-brand,
+  "medium": $medium-brand,
 );
 
 @mixin branded-icon($icon-class, $icon-color) {
