@@ -1,3 +1,9 @@
+# Important: This repository is archived and has moved to the [main vocabulary monorepo](https://github.com/creativecommons/vocabulary).
+
+You should clone that repository instead. Note that npm package names have remained the same, only the codebase has moved.
+
+---
+
 <p align="center">
   <a href="https://creativecommons.org/" class="readme-cc-logo">
     <img
